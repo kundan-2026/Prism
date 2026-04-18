@@ -40,18 +40,13 @@
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 h-20 flex items-center">
         <div class="max-w-7xl mx-auto px-4 w-full flex justify-between items-center">
             
-            <!-- Professional Branding: Logo + Text -->
             <a href="index.html" class="flex items-center group">
-                <!-- PNG Logo Placeholder (Random Medical Unsplash Image) -->
                 <div class="relative flex-shrink-0 mr-3">
-                    <img src="Prism logo.jpeg"
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=100&h=100" 
                          alt="Prism Logo" 
                          class="h-11 w-11 object-cover rounded-xl shadow-sm border border-slate-100 group-hover:scale-105 transition-transform duration-300">
-                    <!-- Subtle Glow effect behind logo -->
                     <div class="absolute inset-0 bg-clinical-blue/10 rounded-xl blur-md -z-10"></div>
                 </div>
-
-                <!-- Branding Text -->
                 <div class="flex flex-col justify-center">
                     <span class="text-2xl font-black tracking-tighter text-gray-900 leading-none">P R I S M</span>
                     <div class="flex items-center">
@@ -117,6 +112,38 @@
 
     <!-- Main Content -->
     <main class="pt-40 pb-24 px-4">
+        
+        <!-- SECTION: WHY BOOK WITH US -->
+        <div class="max-w-6xl mx-auto mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-black italic uppercase tracking-tighter text-slate-900 leading-tight">Why <span class="clinical-blue">Choose</span> Prism Healthcare?</h2>
+                <p class="text-slate-500 font-medium mt-4 max-w-2xl mx-auto italic">Experience the gold standard in physical rehabilitation with personalized clinical care.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl border border-slate-50 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-blue-100 text-clinical-blue rounded-2xl flex items-center justify-center mb-6"><i data-lucide="award" class="w-6 h-6"></i></div>
+                    <h3 class="font-black italic uppercase text-sm tracking-widest mb-3">Expert Care</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed italic">Led by **Dr. Ravi Kumar (MPT Neuro)**, ensuring specialized neurological & manual therapy.</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl border border-slate-50 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-6"><i data-lucide="zap" class="w-6 h-6"></i></div>
+                    <h3 class="font-black italic uppercase text-sm tracking-widest mb-3">Modern Tech</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed italic">Advanced modalities like **Dry Needling, Cupping, and Combo Therapy** for 3x faster recovery.</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl border border-slate-50 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6"><i data-lucide="home" class="w-6 h-6"></i></div>
+                    <h3 class="font-black italic uppercase text-sm tracking-widest mb-3">Home Visits</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed italic">Specialized home rehabilitation for **Stroke & Paralysis** patients in Begusarai & Patna.</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-xl border border-slate-50 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6"><i data-lucide="shield-check" class="w-6 h-6"></i></div>
+                    <h3 class="font-black italic uppercase text-sm tracking-widest mb-3">Trusted Flow</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed italic">Transparent pricing with secure **UPI-linked slot booking** and instant verification.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="max-w-6xl mx-auto">
             <div class="bg-white rounded-[3.5rem] shadow-3xl overflow-hidden flex flex-col lg:flex-row border border-slate-100">
                 
@@ -181,7 +208,7 @@
                             <textarea id="ap-msg" rows="2" class="w-full p-4 bg-slate-50 rounded-2xl form-input text-sm" placeholder="Any previous treatment?"></textarea>
                         </div>
                         
-                        <!-- NEW: PAYMENT SECTION -->
+                        <!-- PAYMENT SECTION -->
                         <div class="bg-blue-50 border border-blue-100 p-6 rounded-[2rem] space-y-4">
                             <div class="flex items-center gap-3">
                                 <div class="p-2 bg-clinical-blue text-white rounded-lg"><i data-lucide="qr-code" class="w-5 h-5"></i></div>
@@ -189,6 +216,18 @@
                             </div>
                             <p class="text-xs text-slate-600 leading-relaxed">Pay **₹500** consultation fee to confirm your slot. <br>UPI ID: <span class="font-bold text-slate-900">prism.healthcare@upi</span></p>
                             
+                            <!-- NEW: UPI APP REDIRECT BUTTON -->
+                            <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                                <a href="upi://pay?pa=prism.healthcare@upi&pn=Prism%20Healthcare&am=500&cu=INR" 
+                                   class="flex-1 bg-green-600 text-white font-black py-4 rounded-2xl shadow-lg hover:bg-green-700 transition flex items-center justify-center gap-2 text-xs uppercase tracking-widest">
+                                    <i data-lucide="smartphone" class="w-4 h-4"></i> Pay via UPI App
+                                </a>
+                                <button type="button" onclick="toggleQRModal()" 
+                                        class="flex-1 bg-slate-900 text-white font-black py-4 rounded-2xl shadow-lg hover:bg-slate-800 transition flex items-center justify-center gap-2 text-xs uppercase tracking-widest">
+                                    <i data-lucide="maximize" class="w-4 h-4"></i> Scan to Pay
+                                </button>
+                            </div>
+
                             <div class="space-y-2">
                                 <label class="text-[10px] font-bold uppercase text-clinical-blue tracking-widest ml-1">Transaction ID / Reference No.</label>
                                 <input type="text" id="ap-payment" required placeholder="Enter 12-digit UPI Transaction ID" class="w-full p-4 bg-white border-blue-200 border rounded-2xl form-input text-sm font-bold text-slate-900">
@@ -203,6 +242,20 @@
             </div>
         </div>
     </main>
+
+    <!-- NEW: QR MODAL POPUP -->
+    <div id="qr-modal" class="fixed inset-0 z-[200] bg-black/80 hidden items-center justify-center p-4">
+        <div class="bg-white p-8 rounded-[2.5rem] max-w-sm w-full text-center relative animate-reveal">
+            <button onclick="toggleQRModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900">
+                <i data-lucide="x-circle" class="w-8 h-8"></i>
+            </button>
+            <h3 class="font-black italic uppercase text-clinical-blue mb-4 tracking-tighter text-xl">Scan to Pay</h3>
+            <!-- Replace with your actual QR code image URL -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=upi://pay?pa=prism.healthcare@upi%26pn=Prism%20Healthcare%26am=500%26cu=INR" 
+                 class="w-full h-auto rounded-3xl border-4 border-slate-50 shadow-inner mb-6" alt="UPI QR Code">
+            <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Fee: ₹500 | Prism Healthcare</p>
+        </div>
+    </div>
 
     <!-- Map & Footer -->
     <footer class="bg-slate-900 text-white pt-20 pb-12 rounded-t-[4rem]">
@@ -238,6 +291,13 @@
             const type = document.getElementById('ap-type').value;
             const homeFields = document.getElementById('home-visit-details');
             homeFields.style.display = (type === 'Home Visit') ? 'block' : 'none';
+        }
+
+        // NEW: QR MODAL TOGGLE
+        function toggleQRModal() {
+            const modal = document.getElementById('qr-modal');
+            modal.classList.toggle('hidden');
+            modal.classList.toggle('flex');
         }
 
         // Navigation
@@ -369,6 +429,9 @@
 
         document.getElementById('send-btn').onclick = handleBotInput;
         botInput.onkeypress = (e) => { if(e.key === 'Enter') handleBotInput(); };
+
+        window.onscroll = () => { document.querySelectorAll('.reveal').forEach(el => { if(el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('active'); }); };
+        window.dispatchEvent(new Event('scroll'));
     </script>
 </body>
 </html>

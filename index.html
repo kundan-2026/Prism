@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prism Healthcare | Dr. Ravi Kumar - Lead Neuro-Rehab Specialist</title>
+    <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=32&h=32">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -64,18 +65,13 @@
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 h-20 flex items-center">
         <div class="max-w-7xl mx-auto px-4 w-full flex justify-between items-center">
             
-            <!-- Professional Branding: Logo + Text -->
             <a href="index.html" class="flex items-center group">
-                <!-- PNG Logo Placeholder (Random Medical Unsplash Image) -->
                 <div class="relative flex-shrink-0 mr-3">
                     <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=100&h=100" 
                          alt="Prism Logo" 
                          class="h-11 w-11 object-cover rounded-xl shadow-sm border border-slate-100 group-hover:scale-105 transition-transform duration-300">
-                    <!-- Subtle Glow effect behind logo -->
                     <div class="absolute inset-0 bg-clinical-blue/10 rounded-xl blur-md -z-10"></div>
                 </div>
-
-                <!-- Branding Text -->
                 <div class="flex flex-col justify-center">
                     <span class="text-2xl font-black tracking-tighter text-gray-900 leading-none">P R I S M</span>
                     <div class="flex items-center">
@@ -84,7 +80,6 @@
                 </div>
             </a>
 
-            <!-- Desktop Menu (Hidden on Mobile) -->
             <div class="hidden lg:flex space-x-8 items-center font-bold text-sm text-slate-600">
                 <a href="index.html" class="text-clinical-blue hover:opacity-80 transition-all border-b-2 border-clinical-blue pb-1">Home</a>
                 <a href="about.html" class="hover:text-clinical-blue transition-all pb-1 border-b-2 border-transparent hover:border-clinical-blue">About</a>
@@ -95,13 +90,13 @@
                 </a>
             </div>
 
-            <!-- Mobile Navigation Toggle -->
             <button id="menu-btn" class="lg:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-lg transition-colors focus:outline-none">
                 <i data-lucide="menu" class="w-8 h-8"></i>
             </button>
         </div>
     </nav>
-    <!-- Mobile Menu Slide-out (FIXED) -->
+
+    <!-- Mobile Menu Slide-out -->
     <div id="mobile-menu" class="fixed inset-0 z-[60] bg-white flex flex-col p-8 lg:hidden">
         <div class="flex justify-end">
             <button id="close-menu" class="p-2 text-slate-500"><i data-lucide="x" class="w-10 h-10"></i></button>
@@ -140,7 +135,7 @@
         </div>
     </section>
 
-    <!-- Service Grid (FIXED BUTTONS) -->
+    <!-- Service Grid -->
     <section id="services" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -149,7 +144,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
                 <div class="reveal p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
                     <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-clinical-blue transition-colors text-clinical-blue group-hover:text-white">
                         <i data-lucide="brain-circuit"></i>
@@ -159,7 +153,6 @@
                     <a href="services.html" class="text-clinical-blue font-bold text-xs uppercase flex items-center gap-2">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
                 </div>
 
-                <!-- Service 2 -->
                 <div class="reveal p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
                     <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-clinical-blue transition-colors text-clinical-blue group-hover:text-white">
                         <i data-lucide="bone"></i>
@@ -169,7 +162,6 @@
                     <a href="services.html" class="text-clinical-blue font-bold text-xs uppercase flex items-center gap-2">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
                 </div>
 
-                <!-- Service 3 -->
                 <div class="reveal p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
                     <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-clinical-blue transition-colors text-clinical-blue group-hover:text-white">
                         <i data-lucide="zap"></i>
@@ -179,7 +171,6 @@
                     <a href="services.html" class="text-clinical-blue font-bold text-xs uppercase flex items-center gap-2">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
                 </div>
 
-                <!-- Service 4 -->
                 <div class="reveal p-8 rounded-2xl bg-gray border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
                     <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-clinical-blue transition-colors text-clinical-blue group-hover:text-white">
                         <i data-lucide="baby"></i>
@@ -189,7 +180,6 @@
                     <a href="services.html" class="text-clinical-blue font-bold text-xs uppercase flex items-center gap-2">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
                 </div>
 
-                <!-- Service 5 -->
                 <div class="reveal p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
                     <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-clinical-blue transition-colors text-clinical-blue group-hover:text-white">
                         <i data-lucide="trophy"></i>
@@ -199,7 +189,6 @@
                     <a href="services.html" class="text-clinical-blue font-bold text-xs uppercase flex items-center gap-2">View Details <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
                 </div>
 
-                <!-- Image Card (FIXED PATH) -->
                 <div class="reveal rounded-2xl overflow-hidden shadow-sm relative group h-full min-h-[250px]">
                     <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Clinical treatment">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
@@ -251,36 +240,25 @@
     </section>
 
     <!-- Map & Footer -->
-<!-- Map & Footer -->
     <footer class="bg-slate-900 text-white pt-20 pb-12 rounded-t-[4rem]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-3 gap-12 mb-16">
-                <!-- Branding & Socials -->
                 <div>
                     <h4 class="text-2xl font-extrabold mb-6 clinical-blue uppercase italic">PRISM Healthcare</h4>
                     <p class="text-slate-400 text-sm leading-relaxed mb-8 italic">Excellence in specialized neurological and physical rehabilitation under Dr. Ravi Kumar. Follow our journey of recovery.</p>
-                    
-                    <!-- Social Media Buttons -->
                     <div class="flex flex-wrap gap-3">
-                        <!-- linkdin -->
-                        <a href="https://linkdin.com/YOUR_PAGE" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-[#1877F2] text-white rounded-xl text-xs font-bold shadow-lg hover:scale-105 transition-transform">
-                            <i data-lucide="facebook" class="w-4 h-4"></i> linkdin
-                        <!-- Instagram -->
+                        <a href="#" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-[#1877F2] text-white rounded-xl text-xs font-bold shadow-lg hover:scale-105 transition-transform">
+                            <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+                        </a>
                         <a href="https://instagram.com/prismphysiotherapy" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white rounded-xl text-xs font-bold shadow-lg hover:scale-105 transition-transform">
                             <i data-lucide="instagram" class="w-4 h-4"></i> Instagram
                         </a>
-                        <!-- YouTube -->
-                        <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-[#FF0000] text-white rounded-xl text-xs font-bold shadow-lg hover:scale-105 transition-transform">
+                        <a href="#" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-[#FF0000] text-white rounded-xl text-xs font-bold shadow-lg hover:scale-105 transition-transform">
                             <i data-lucide="youtube" class="w-4 h-4"></i> YouTube
-                        </a>
-                        <!-- Facebook -->
-                        <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-[#1877F2] text-white rounded-xl text-xs font-bold shadow-lg hover:scale-105 transition-transform">
-                            <i data-lucide="facebook" class="w-4 h-4"></i> Facebook
                         </a>
                     </div>
                 </div>
 
-                <!-- Contact Details -->
                 <div class="space-y-6">
                     <div>
                         <h5 class="font-bold text-xs uppercase tracking-widest text-clinical-blue mb-2 italic">Begusarai (HQ)</h5>
@@ -296,13 +274,10 @@
                     </div>
                 </div>
 
-                <!-- Google Map -->
                 <div class="rounded-3xl overflow-hidden h-48 border border-slate-800 shadow-xl">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.6!2d85.13!3d25.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5842f03901b5%3A0x747209930f78a2!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1704543200000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.6!2d85.13!3d25.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5842f03901b5%3A0x747209930f78a2!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1704543200000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-
-            <!-- Footer Credit -->
             <div class="border-t border-slate-800 pt-10 text-center text-slate-500 text-[10px] uppercase tracking-[0.3em] font-bold">
                 &copy; 2024 Prism Healthcare. Developed by Clinical Architect.
             </div>
@@ -319,8 +294,8 @@
         menuBtn.onclick = () => mobileMenu.classList.add('open');
         closeMenu.onclick = () => mobileMenu.classList.remove('open');
 
-        // 2. SMART BOT LOGIC (UPDATED WITH PAYMENT PROOF)
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx0PkdOa0rNfwSkDcHgIgBjrjYAdhMAAWhG-icWEO4UM3z-Pqfe_zDRxO4dWNmc49mB/exec';
+        // 2. DATA SCRIPT
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwQmrjUara4qVeEMua8JA3jFnUguv2O0tUyF5P0arjeuFlDwfTNkCZGoLxyaCGNbLG-/exec';
         const chatWindow = document.getElementById('chat-window');
         const chatToggle = document.getElementById('chat-toggle');
         const chatContent = document.getElementById('chat-content');
@@ -328,13 +303,13 @@
         const botInput = document.getElementById('bot-input');
         
         let bookingStep = 0; 
-        let userData = { name: '', phone: '', location: '', condition: '', duration: '', paymentProof: '', message: 'Services Page Lead' };
+        let userData = { source: '', name: '', phone: '', location: '', condition: '', duration: '', paymentProof: '', message: '' };
 
         function openChat() {
             chatWindow.classList.add('open');
             if(chatContent.innerHTML === "") {
                 setTimeout(() => {
-                    appendMsg('bot', "Hi! 👋 Welcome to Prism Healthcare. I am your digital assistant. How can I help you today?");
+                    appendMsg('bot', "Hi! 👋 Welcome to Prism Healthcare. I am your digital assistant.");
                     showMainMenu();
                 }, 400);
             }
@@ -357,6 +332,8 @@
             div.innerHTML = `
                 <button onclick="handleBotAction('book')" class="text-left text-xs bg-clinical-blue text-white p-3 rounded-xl font-bold uppercase shadow-md">📅 Diagnostic Booking</button>
                 <button onclick="handleBotAction('doctor')" class="text-left text-xs bg-white border border-slate-200 p-3 rounded-xl font-semibold hover:border-clinical-blue">👨‍⚕️ About Dr. Ravi Kumar</button>
+                <button onclick="handleBotAction('services')" class="text-left text-xs bg-white border border-slate-200 p-3 rounded-xl hover:border-clinical-blue transition font-semibold">🏥 Service Details</button>
+                <button onclick="handleBotAction('loc')" class="text-left text-xs bg-white border border-slate-200 p-3 rounded-xl hover:border-clinical-blue transition font-semibold">📍 Clinic Locations</button>
                 <button onclick="handleBotAction('help')" class="text-left text-xs bg-slate-800 text-white p-3 rounded-xl font-bold uppercase shadow-md">💬 Need Help / Message</button>
             `;
             chatContent.appendChild(div);
@@ -367,12 +344,25 @@
             if(opt) opt.remove();
             if(type === 'doctor') {
                 appendMsg('user', "About Dr. Ravi.");
-                appendMsg('bot', "**Dr. Ravi Kumar (PT)**\nMPT (Neurology). Specialist in Neuro-Rehab.");
+                appendMsg('bot', "**Dr. Ravi Kumar (PT)**\nMPT (Neurology).");
                 setTimeout(showMainMenu, 1500);
-            } else if(type === 'help') {
-                appendMsg('bot', "Please type your message below:");
-                bookingStep = 10; botInputArea.classList.remove('hidden'); botInput.focus();
+            } 
+            else if(type === 'services') {
+                appendMsg('user', "Show services.");
+                appendMsg('bot', "**Our Specializations:**\n• Neuro Rehab\n• Ortho Care\n• Sports Injury\n• Dry Needling & Cupping");
+                setTimeout(showMainMenu, 1500);
+            }
+            else if(type === 'loc') {
+                appendMsg('user', "Locations?");
+                appendMsg('bot', "**Unit 1:** Begusarai HQ\n**Unit 2:** Patna Kankarbagh");
+                setTimeout(showMainMenu, 1500);
+            }
+            else if(type === 'help') {
+                userData.source = "Bot Message";
+                appendMsg('bot', "What is your Name?");
+                bookingStep = 11; botInputArea.classList.remove('hidden'); botInput.focus();
             } else if(type === 'book') {
+                userData.source = "Bot Booking";
                 appendMsg('bot', "**Q1: What is the Patient's Full Name?**");
                 bookingStep = 1; botInputArea.classList.remove('hidden'); botInput.focus();
             }
@@ -384,39 +374,61 @@
             appendMsg('user', val);
             botInput.value = "";
 
-            if (bookingStep === 10) { userData.message = "Msg: " + val; appendMsg('bot', "What is your Name?"); bookingStep = 11; return; }
-            if (bookingStep === 11) { userData.name = val; appendMsg('bot', "Mobile Number?"); bookingStep = 12; return; }
-            if (bookingStep === 12) { userData.phone = val; saveAndConfirm("Message Sent!"); return; }
+            if (bookingStep === 11) { userData.name = val; appendMsg('bot', "Phone Number?"); bookingStep = 12; return; }
+            if (bookingStep === 12) { userData.phone = val; appendMsg('bot', "How can we help you?"); bookingStep = 13; return; }
+            if (bookingStep === 13) { userData.message = val; saveAndConfirm("Message Sent!"); return; }
 
             switch(bookingStep) {
-                case 1: userData.name = val; appendMsg('bot', "**Q2: Mobile Number?**"); bookingStep = 2; break;
-                case 2: userData.phone = val; appendMsg('bot', "**Q3: Clinic (Begusarai/Patna)?**"); bookingStep = 3; break;
-                case 3: userData.location = val; appendMsg('bot', "**Q4: Condition (e.g. Stroke)?**"); bookingStep = 4; break;
-                case 4: userData.condition = val; appendMsg('bot', "**Q5: Duration (e.g. 1 year)?**"); bookingStep = 5; break;
+                case 1: userData.name = val; appendMsg('bot', "Mobile Number?"); bookingStep = 2; break;
+                case 2: userData.phone = val; appendMsg('bot', "Clinic (Begusarai/Patna)?"); bookingStep = 3; break;
+                case 3: userData.location = val; appendMsg('bot', "Condition (e.g. Stroke)?"); bookingStep = 4; break;
+                case 4: userData.condition = val; appendMsg('bot', "Duration (e.g. 1 year)?"); bookingStep = 5; break;
                 case 5: userData.duration = val;
-                    appendMsg('bot', "Final Step: Pay ₹500 fee via UPI: **prism.healthcare@upi**\n\n**Type your Transaction ID here as proof:**");
+                    appendMsg('bot', "Pay ₹500 fee via UPI: **prism.healthcare@upi**\n\nEnter Transaction ID:");
                     bookingStep = 6; break;
-                case 6:
-                    userData.paymentProof = val;
-                    saveAndConfirm("✅ Booking Confirmed! Payment proof recorded."); break;
+                case 6: userData.paymentProof = val;
+                    saveAndConfirm("✅ Booking Confirmed!"); break;
             }
         }
 
         async function saveAndConfirm(txt) {
-            appendMsg('bot', "Processing your data...");
+            appendMsg('bot', "Processing...");
             try {
                 await fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(userData) });
                 appendMsg('bot', txt);
-            } catch (e) { appendMsg('bot', "Success! Details recorded."); }
+            } catch (e) { appendMsg('bot', "Recorded successfully."); }
             bookingStep = 0; botInputArea.classList.add('hidden'); setTimeout(showMainMenu, 3000);
         }
 
         document.getElementById('send-btn').onclick = processBotInput;
         botInput.onkeypress = (e) => { if(e.key === 'Enter') processBotInput(); };
 
-        // 3. REVEAL ANIMATION
+        // 3. REVEAL
         window.onscroll = () => { document.querySelectorAll('.reveal').forEach(el => { if(el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('active'); }); };
         window.dispatchEvent(new Event('scroll'));
+
+        // 4. INQUIRY FORM
+        const homeContactForm = document.getElementById('homeContactForm');
+        homeContactForm.onsubmit = async (e) => {
+            e.preventDefault();
+            const btn = homeContactForm.querySelector('button');
+            btn.innerText = "Sending...";
+            const formData = {
+                source: "Inquiry Form",
+                name: document.getElementById('fc-name').value,
+                phone: document.getElementById('fc-phone').value,
+                message: document.getElementById('fc-message').value,
+                location: 'Website Lead',
+                condition: 'N/A',
+                paymentProof: 'Inquiry Only'
+            };
+            try {
+                await fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(formData) });
+                alert('Sent Successfully!');
+                homeContactForm.reset();
+            } catch (error) { alert('Details recorded.'); }
+            btn.innerText = "Submit Inquiry";
+        };
     </script>
 </body>
 </html>
